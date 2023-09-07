@@ -29,6 +29,8 @@ if (window.matchMedia("(min-width: 576px)").matches) {
   $(multipleCardCarousel).addClass("slide");
 }
 
+
+
 /*rgeskgdrjbgkajbrgkszjdrbgzk3 3rd one jnflzdbnlfjbgvlzj*/
 const multipleItemCarousel = document.querySelector("#carouselExampleControls");
 
