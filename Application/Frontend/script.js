@@ -59,3 +59,7 @@ if (window.matchMedia("(min-width:576px)").matches) {
 } else {
   $(multipleItemCarousel).addClass("slide");
 }
+
+function handleSelect(elm){
+    window.location = elm.value+".html"; /* .html if html file */
+}
