@@ -16,38 +16,38 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'Godrej 6.5 Kg(WTEON 650 AP 5.0 GPGR, Eco Wash, Semi Automatic) get it at -33% off per month',
-        image: 'wm1.PNG',
+        name: 'nverter Split AC (Copper, AiSense, Four-Way Convertible, Quad Swing, Inverter Tec, MicroFilter, Super-Chill Mode, Auto-Clean, AR15SIN5GMEC, 2023 Model, White) get it at -33% off per month',
+        image: 'ac1.PNG',
         price: 6000
     },
     {
         id: 2,
-        name: 'LG 8 Kg 5 Star Inverter Direct Drive Fully Automatic (FHM1408BDW) get it at -13% off per month',
-        image: 'wm2.PNG',
+        name: 'Blue Star 1.5 Ton 5 Star Convertible 5 in 1 Cooling Inverter Split AC (Copper, 4 Way Swing, Stabalizer Free Operation, Dust Filter, , 2023Model, IC518YNU, White) get it at -13% off per month',
+        image: 'ac2.PNG',
         price: 4000
     },
     {
         id: 3,
-        name: 'Samsung 7 kg Fully-Automatic Top Load(WA70A4002GS) get it at -28% off per month ',
-        image: 'wm3.png',
-        price: 2000
+        name: 'Casa Copenhagen Evaporative Personal Air Cooler Small Cold Air Fan with for Room,Office,Desk - 27.1ltrRZ31.8 (White & Black) with Diet Personal Tower Air Cooler!get it at -28% off per month ',
+        image: 'ac3.png',
+        price: 20000
     },
     {
         id: 4,
-        name: 'Whirlpool 9 Kg Semi-Automatic Top Load (HYDROWASH ELITE 9.0) get it at -70% off per month',
-        image: 'wm4.png',
+        name: 'Lloyd 1.5 Ton 3 Star Inverter Split AC (5 in 1 Convertible, Copper, Anti-Viral + PM 2.5 Filter, 2023 Model, White, GLS18I3FWAMC) get it at -70% off per month',
+        image: 'ac4.png',
         price: 15000
     },
     {
         id: 5,
-        name: 'Samsung 7 kg Fully Automatic Top Loading Machine (WA70BG4441YYTL) get it at -6% off per month',
-        image: 'wm5.PNG',
+        name: 'Lloyd 1.5 Ton 4 Star Fixed Speed Window AC (Copper, 2023 Model, White with Golden Deco Strip, GLW18C4YWGEW) get it at -6% off per month',
+        image: 'ac5.PNG',
         price: 3000
     },
     {
         id: 6,
-        name: 'Whirlpool 6.5 Kg Fully-Auto Top Load (5YMW, Eco wash, ZPF Technology) get it at -5% off per month',
-        image: 'wm6.PNG',
+        name: 'NU 1.5 Ton 3 Star 4 in 1 Convertible Inverter Split AC (Copper Condenser, NUAC153SCIA, White)29.5 x 100 x 23 Centimeters 2023 Model get it at -5% off per month',
+        image: 'ac6.PNG',
         price: 1499
     }
 ];
@@ -57,7 +57,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="assets/img/${value.image}">
+            <img src="../assets/img/${value.image}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
@@ -83,7 +83,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="assets/img/${value.image}"/></div>
+                <div><img src="../assets/img/${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>

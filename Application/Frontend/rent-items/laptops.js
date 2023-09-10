@@ -16,39 +16,39 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'Pigeon Oven Toaster Grill (12381) 9 Liters OTG without Rotisserie get it at -33% off per month',
-        image: 'oven1.PNG',
-        price: 699
+        name: 'HP Victus Gaming Laptop, 12th Gen Intel Core i5-12450H, NVIDIA RTX 3050 GPU, 15.6-inch (39.6 cm), FHD, IPS, 144Hz, 9 ms Response time, 16GB DDR4, 512GB SSD, Backlit KB (MSO, Blue, 2.29 kg) fa0666TX get it at -33% off per month',
+        image: 'lap1.PNG',
+        price: 6000
     },
     {
         id: 2,
-        name: 'Pigeon Electric Oven 20 Liters OTG with Grill and Rotisserie get it at -13% off per month',
-        image: 'oven2.PNG',
-        price: 475
+        name: 'Acer Aspire Lite 11th Gen Intel Core i3 Premium Metal Laptop (8GB RAM/512GB SSD/Windows 11 Home) AL15-51, 39.62cm (15.6") Full HD Display, Metal Body, Steel Gray, 1.59 Kg get it at -13% off per month',
+        image: 'lap2.PNG',
+        price: 4000
     },
     {
         id: 3,
-        name: 'Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG) get it at -28% off per month ',
-        image: 'oven3.png',
-        price: 297
+        name: 'HP 15 Laptop, 11th Gen i3-1115G4 15.6 inch(39.6cm) FHD Laptop, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Dual Speakers (Win 11, MSO 21, 1.69Kgs) 15s-fr2515TU get it at -28% off per month ',
+        image: 'lap3.png',
+        price: 20000
     },
     {
         id: 4,
-        name: 'Whirlpool 20 L Solo Microwave Oven (MAGICOOK) get it at -70% off per month',
-        image: 'oven4.png',
-        price: 890
+        name: 'Lenovo ThinkPad E14 Intel Core i5 12th Gen 14" FHD Thin and Light Laptop (8GB RAM/512GB SSD/Windows 11 Home/MS Office H&S 2021/FPR/Backlit Keyboard/Black/1.59 kg), 21E3S04X00 get it at -70% off per month',
+        image: '1.png',
+        price: 15000
     },
     {
         id: 5,
-        name: 'Tesora Digital Air Fryer Oven | Replaces OTG, Oven, Air Fryer get it at -6% off per month',
-        image: 'oven5.PNG',
-        price: 657
+        name: 'Apple 2022 MacBook Air Laptop with M2 chip: 34.46 cm (13.6-inch) Liquid Retina Display, 8GB RAM, 256GB SSD Storage, 1080p FaceTime HD Camera. Works Space Grey get it at -6% off per month',
+        image: 'macbook.PNG',
+        price: 3000
     },
     {
         id: 6,
-        name: 'LG 20 L Solo Microwave Oven (MS2043BP, Black) get it at -5% off per month',
-        image: 'oven6.PNG',
-        price: 499
+        name: 'Dell Inspiron 7420 2in1 Touch Laptop,12th Gen Intel Core i3-1215U, 8GB/256GB SSD/14.0" (35.56Cms) FHD+ WVA 250 nits/Backlit KB + FPR/Windows 11 + MSO 21/15 Month McAfee get it at -5% off per month',
+        image: 'lap6.PNG',
+        price: 1499
     }
 ];
 let listCards  = [];
@@ -57,7 +57,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="assets/img/${value.image}">
+            <img src="../assets/img/${value.image}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
@@ -83,7 +83,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="assets/img/${value.image}"/></div>
+                <div><img src="../assets/img/${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>

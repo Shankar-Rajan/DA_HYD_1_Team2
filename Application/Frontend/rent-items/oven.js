@@ -16,39 +16,39 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'realme narzo N53 (Feather Black, 4GB+64GB) get it at -33% off per month',
-        image: 'wp1.PNG',
-        price: 6000
+        name: 'Pigeon Oven Toaster Grill (12381) 9 Liters OTG without Rotisserie get it at -33% off per month',
+        image: 'oven1.PNG',
+        price: 699
     },
     {
         id: 2,
-        name: 'Nokia G21 Android Smartphone, Dual SIM, 3-Day Battery Life, 6GB RAM + 128GB get it at -13% off per month',
-        image: 'wp2.PNG',
-        price: 4000
+        name: 'Pigeon Electric Oven 20 Liters OTG with Grill and Rotisserie get it at -13% off per month',
+        image: 'oven2.PNG',
+        price: 475
     },
     {
         id: 3,
-        name: 'Vivo T2x 5G (Aurora Gold, 128 GB) (6 GB RAM) get it at -28% off per month ',
-        image: 'wp3.png',
-        price: 2000
+        name: 'Panasonic 20L Solo Microwave Oven (NN-ST26JMFDG) get it at -28% off per month ',
+        image: 'oven3.png',
+        price: 297
     },
     {
         id: 4,
-        name: 'Nothing Phone (2) 5G (White, 12GB RAM, 256GB get it at -70% off per month',
-        image: 'wp4.png',
-        price: 15000
+        name: 'Whirlpool 20 L Solo Microwave Oven (MAGICOOK) get it at -70% off per month',
+        image: 'oven4.png',
+        price: 890
     },
     {
         id: 5,
-        name: 'Samsung Galaxy S22 5G (Black, 8GB, 128GB Storage) get it at -6% off per month',
-        image: 'wp5.PNG',
-        price: 3000
+        name: 'Tesora Digital Air Fryer Oven | Replaces OTG, Oven, Air Fryer get it at -6% off per month',
+        image: 'oven5.PNG',
+        price: 657
     },
     {
         id: 6,
-        name: 'Apple iPhone 13 (256 GB) - Green get it at -5% off per month',
-        image: 'wp6.PNG',
-        price: 1499
+        name: 'LG 20 L Solo Microwave Oven (MS2043BP, Black) get it at -5% off per month',
+        image: 'oven6.PNG',
+        price: 499
     }
 ];
 let listCards  = [];
@@ -57,7 +57,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="assets/img/${value.image}">
+            <img src="../assets/img/${value.image}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
@@ -83,7 +83,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="assets/img/${value.image}"/></div>
+                <div><img src="../assets/img/${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>

@@ -16,38 +16,38 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'nverter Split AC (Copper, AiSense, Four-Way Convertible, Quad Swing, Inverter Tec, MicroFilter, Super-Chill Mode, Auto-Clean, AR15SIN5GMEC, 2023 Model, White) get it at -33% off per month',
-        image: 'ac1.PNG',
+        name: 'Hisense 45L Single Door Mini Refrigerator (RR46D4SBN) get it at -33% off per month',
+        image: 'fridge1.PNG',
         price: 6000
     },
     {
         id: 2,
-        name: 'Blue Star 1.5 Ton 5 Star Convertible 5 in 1 Cooling Inverter Split AC (Copper, 4 Way Swing, Stabalizer Free Operation, Dust Filter, , 2023Model, IC518YNU, White) get it at -13% off per month',
-        image: 'ac2.PNG',
+        name: 'Haier 165 L 1 Star Direct Cool Single Door(HED-171RS-P) get it at -13% off per month',
+        image: 'fridge2.PNG',
         price: 4000
     },
     {
         id: 3,
-        name: 'Casa Copenhagen Evaporative Personal Air Cooler Small Cold Air Fan with for Room,Office,Desk - 27.1ltrRZ31.8 (White & Black) with Diet Personal Tower Air Cooler!get it at -28% off per month ',
-        image: 'ac3.png',
-        price: 20000
+        name: 'Whirlpool 184 L (205 WDE CLS 2S SAPPHIRE ,2023 Model) get it at -28% off per month ',
+        image: 'fridge3.png',
+        price: 2000
     },
     {
         id: 4,
-        name: 'Lloyd 1.5 Ton 3 Star Inverter Split AC (5 in 1 Convertible, Copper, Anti-Viral + PM 2.5 Filter, 2023 Model, White, GLS18I3FWAMC) get it at -70% off per month',
-        image: 'ac4.png',
-        price: 15000
+        name: 'Haier 190L Direct Cool Single Door(2023 Model, HED-204DS-P) get it at -70% off per month',
+        image: 'fridge4.png',
+        price: 5000
     },
     {
         id: 5,
-        name: 'Lloyd 1.5 Ton 4 Star Fixed Speed Window AC (Copper, 2023 Model, White with Golden Deco Strip, GLW18C4YWGEW) get it at -6% off per month',
-        image: 'ac5.PNG',
+        name: 'Haier 185 L 2 Star Direct Cool (HED-19TGG-N, Holyleaf Glass) get it at -6% off per month',
+        image: 'fridge5.PNG',
         price: 3000
     },
     {
         id: 6,
-        name: 'NU 1.5 Ton 3 Star 4 in 1 Convertible Inverter Split AC (Copper Condenser, NUAC153SCIA, White)29.5 x 100 x 23 Centimeters 2023 Model get it at -5% off per month',
-        image: 'ac6.PNG',
+        name: 'Haier 328L Inverter Double Door(2023 Model, HRF-3783YGG-P) get it at -5% off per month',
+        image: 'fridge6.PNG',
         price: 1499
     }
 ];
@@ -57,7 +57,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="assets/img/${value.image}">
+            <img src="../assets/img/${value.image}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
@@ -83,7 +83,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="assets/img/${value.image}"/></div>
+                <div><img src="../assets/img/${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>

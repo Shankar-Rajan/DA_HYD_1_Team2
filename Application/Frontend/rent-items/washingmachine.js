@@ -16,38 +16,38 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'Hisense 45L Single Door Mini Refrigerator (RR46D4SBN) get it at -33% off per month',
-        image: 'fridge1.PNG',
+        name: 'Godrej 6.5 Kg(WTEON 650 AP 5.0 GPGR, Eco Wash, Semi Automatic) get it at -33% off per month',
+        image: 'wm1.PNG',
         price: 6000
     },
     {
         id: 2,
-        name: 'Haier 165 L 1 Star Direct Cool Single Door(HED-171RS-P) get it at -13% off per month',
-        image: 'fridge2.PNG',
+        name: 'LG 8 Kg 5 Star Inverter Direct Drive Fully Automatic (FHM1408BDW) get it at -13% off per month',
+        image: 'wm2.PNG',
         price: 4000
     },
     {
         id: 3,
-        name: 'Whirlpool 184 L (205 WDE CLS 2S SAPPHIRE ,2023 Model) get it at -28% off per month ',
-        image: 'fridge3.png',
+        name: 'Samsung 7 kg Fully-Automatic Top Load(WA70A4002GS) get it at -28% off per month ',
+        image: 'wm3.png',
         price: 2000
     },
     {
         id: 4,
-        name: 'Haier 190L Direct Cool Single Door(2023 Model, HED-204DS-P) get it at -70% off per month',
-        image: 'fridge4.png',
-        price: 5000
+        name: 'Whirlpool 9 Kg Semi-Automatic Top Load (HYDROWASH ELITE 9.0) get it at -70% off per month',
+        image: 'wm4.png',
+        price: 15000
     },
     {
         id: 5,
-        name: 'Haier 185 L 2 Star Direct Cool (HED-19TGG-N, Holyleaf Glass) get it at -6% off per month',
-        image: 'fridge5.PNG',
+        name: 'Samsung 7 kg Fully Automatic Top Loading Machine (WA70BG4441YYTL) get it at -6% off per month',
+        image: 'wm5.PNG',
         price: 3000
     },
     {
         id: 6,
-        name: 'Haier 328L Inverter Double Door(2023 Model, HRF-3783YGG-P) get it at -5% off per month',
-        image: 'fridge6.PNG',
+        name: 'Whirlpool 6.5 Kg Fully-Auto Top Load (5YMW, Eco wash, ZPF Technology) get it at -5% off per month',
+        image: 'wm6.PNG',
         price: 1499
     }
 ];
@@ -57,7 +57,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="assets/img/${value.image}">
+            <img src="../assets/img/${value.image}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
@@ -83,7 +83,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="assets/img/${value.image}"/></div>
+                <div><img src="../assets/img/${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>
